@@ -1,0 +1,29 @@
+body {
+background-color: rgb(226,238,237);
+
+        background-size: cover; /* Scale the image to cover the entire viewport */
+     
+        background-position: center ; /* Center the background image */
+}
+#first-bloc {
+      background-image:url('images/backtitle.jpg');
+background-size: cover; 
+ background-position: center center; 
+display: flex; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  
+height: 300px
+}
+.title {
+color: brown; /* Text color */
+    font-size: 200px; /* Adjust the font size as needed */
+ text-shadow: 
+        -1px -1px 0 white,  
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white; /* Text outline with a 1px white shadow in all directions */
+}
+#meltedchoco {
+width: 1330px;
+}
