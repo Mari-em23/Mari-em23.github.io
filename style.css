@@ -6,7 +6,7 @@ background-color: rgb(226,238,237);
         background-position: center ; /* Center the background image */
 }
 #first-bloc {
-      background-image:url('images/backtitle.jpg');
+      background-image:url('backtitle.jpg');
 background-size: cover; 
  background-position: center center; 
 display: flex; 
