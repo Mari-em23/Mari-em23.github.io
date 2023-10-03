@@ -8,8 +8,8 @@
 <img id="meltedchoco", src="melted-chocolate.png" />
  <form>
   <input type="text" name="username" value="username"/>
-  <input type="password" name="" value="password"/>
-  <textarea name="comments"> please review the site </textarea>
+  <input type="password" name="" value="password" size="30"/>
+  <textarea name="comments" placeholder="ghuguguy" maxlength="5"> </textarea>
  </form>
 </body>
 </html>
