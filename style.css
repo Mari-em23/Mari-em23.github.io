@@ -25,5 +25,11 @@ color: brown; /* Text color */
         1px 1px 0 white; /* Text outline with a 1px white shadow in all directions */
 }
 #meltedchoco {
-width: 1330px;
+        background-image:url('backtitle.jpg');
+background-size: cover; 
+ background-position: center center; 
+display: flex; 
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
 }
