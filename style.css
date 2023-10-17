@@ -1,3 +1,5 @@
 
-  .title { font:italic titling-caps bold 12px/16px verdana}
+.title {
+  font: italic titling-caps bold 12px/16px verdana;
+}
   #first-bloc{background-image:url("file:///C:/Users/INFOKOM/Downloads/ezgif.com-gif-to-webp.webp")}
