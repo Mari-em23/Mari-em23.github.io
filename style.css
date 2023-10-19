@@ -39,7 +39,7 @@ a{
 a: hover{
   color:#EBC37E;
 }
-a img{
+img[alt=logo]{
    margin-top: 50px;
    height: 100px;
    border: 2px solid #E3DDDD;
