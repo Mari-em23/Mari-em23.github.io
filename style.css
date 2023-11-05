@@ -50,5 +50,8 @@ body{
 h2{
   color: #240c01;
   font-size: 70px;
+}
+#mchef, #femchef{
+  float: left;
 
 }
