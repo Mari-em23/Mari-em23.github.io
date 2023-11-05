@@ -54,5 +54,5 @@ h2{
 }
 #mchef, #femchef, #store{
   float: left;
-
+  margin-right: 10px;
 }
