@@ -45,4 +45,10 @@ img[alt=logo]{
 }
 body{
    background-color: #F3E8C3;
+   font-family: Georgia, serif;
+}
+h2{
+  color: #240c01;
+  font-size: 70px;
+
 }
