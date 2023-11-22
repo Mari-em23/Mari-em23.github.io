@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>only_chocolate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <script>
+        document.getElementById('commandeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            // Récupérer les informations du formulaire
+            var nom = document.getElementById('nom').value;
+            var email = document.getElementById('email').value;
+            var adresse = document.getElementById('adresse').value;
+            var ville = document.getElementById('ville').value;
+            var codePostal = document.getElementById('codePostal').value;
+            var produit = document.getElementById('produit').value;
+            var quantite = document.getElementById('quantite').value;
+        
+            // Stocker les informations du produit dans le stockage local
+            var produitSelectionne = {
+                nom: nom,
+                email: email,
+                adresse: adresse,
+                ville: ville,
+                codePostal: codePostal,
+                produit: produit,
+                quantite: quantite
+            };
+        
+            localStorage.setItem('produitSelectionne', JSON.stringify(produitSelectionne));
+        
+            // Rediriger vers la page "Shop"
+            window.location.href = 'shop.html';
+        });
+        </script>
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html"><img src="logo.PNG" alt="logo" title="logo"/></a>
+        <ul>
+           <li><a href="index.html" >Home</a></li>
+           <li><a href="about.html" target="_blank">About Us</a></li>
+           <li><a href="shop.html" target="_blank">Shop</a></li>
+           <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+        </div>
+    <header>
+        <h1>Votre commande</h1>
+    </header>
+
+    <section id="secion commande">
+        <form id="commandeForm" action="traitement-commande.php" method="post">
+            <!-- Informations du client -->
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Informations de livraison -->
+            <h3>Adresse de Livraison</h3>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" name="ville" required>
+
+            <label for="codePostal">Code Postal :</label>
+            <input type="text" id="codePostal" name="codePostal" required>
+
+            <!-- Sélection des produits -->
+            <h3>Produits</h3>
+
+            <label for="quantite">Quantité :</label>
+            <input type="number" id="quantite" name="quantite" min="1" required>
+
+            <!-- Bouton de soumission du formulaire -->
+            <button type="submit">Passer la Commande</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; only_chocolate</p>
+    </footer>
+
+    <script src="commande.js"></script>
+</body>
+</html>

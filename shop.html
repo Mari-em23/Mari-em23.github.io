@@ -1,7 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="script.js"></script>
  <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="icon" type="image/x-icon" href="logo.ico">
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Récupérer les informations du produit depuis le stockage local
+        var produitSelectionne = JSON.parse(localStorage.getItem('produitSelectionne'));
+    
+        // Vérifier si des informations sont présentes
+        if (produitSelectionne) {
+            // Supposons que vous ayez une quantité totale définie pour chaque produit
+            var quantiteTotale = 50; // Remplacez cela par la quantité totale réelle du produit
+    
+            // Calculer la quantité restante
+            var quantiteRestante = quantiteTotale - parseInt(produitSelectionne.quantite);
+    
+            var shopSection = document.getElementById('shopSection');
+            var messageProduit = document.createElement('p');
+            messageProduit.textContent = 'Produit sélectionné : ' + produitSelectionne.produit +
+                                          ', Quantité : ' + produitSelectionne.quantite;
+            shopSection.appendChild(messageProduit);
+    
+            var messageQuantiteRestante = document.createElement('p');
+            messageQuantiteRestante.textContent = 'Quantité restante : ' + quantiteRestante;
+            shopSection.appendChild(messageQuantiteRestante);
+    
+            // Vous pouvez également utiliser d'autres informations du produit ici
+        }
+    });
+    </script>
 </head>
 <body>
  <div class="menu">
@@ -13,18 +44,24 @@
    <li><a href="contact.html" target="_blank">Contact</a></li>
 </ul>
 </div>
+<div id="first-bloc"><h1 class="title">Only Chocolate</h1></div>
 
-<div id="first-bloc"><h1 class="title">Only Chocolate</h1></div><br><br>
-  <img src="https://i.pinimg.com/originals/b1/07/39/b10739a10a83a02519716fb954e1f200.jpg" width="300" height="200"/><br>
-  <p><b>Price:</b> 35 DT<br><br>
-     <label for="number"><b>Add to cart:</b><a href="#"><img src="https://th.bing.com/th/id/R.3ffe0963fd59a7a64306e69f777e4d48?rik=KbRny7vz5g%2bVfg&pid=ImgRaw&r=0" width="30" height="20"/></a></label> <form><input type="number" id="numberInput" name="numberInput" min="1" max="100"></form><a href=""></a><br>
-     <a href="#"><b>Add to favorite</b></a><br><br>
-     <label for="rate"><b>Rate:</b></label>  <form><input type="range" id="rate" name="rate" min="0" max="100" step="1"></form></p>
-  <div id="commentsection">
-        <label for="textareaInput"><b>Enter your comments:</b><br><br></label>
-   <textarea id="textareaInput" name="comments" rows="4" cols="50"></textarea><br><br>
-    <input type="submit" value="Submit">
-   </form>
+<header>
+    <h1>our store</h1>
+</header>
+
+<section id="produits">
+
+</section>
+<section id="shopSection">
+    <!-- Les informations du produit sélectionné et la quantité restante seront affichées ici -->
+</section>
+
+<footer>
+    <p>&copy; only_chocolate</p>
+</footer>
+
+<script src="script.js"></script>
    
   </div>
 
