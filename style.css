@@ -26,13 +26,13 @@
 
 .menu ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
 }
 
 .menu li {
     display: inline-block;
-    margin-right: 20px;
+    font-size: 25px;
+    margin: 0 100px 0 100px;
 }
 
 .menu a {
