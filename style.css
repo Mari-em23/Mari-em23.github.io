@@ -80,12 +80,16 @@ h2 {
     font-size: 70px;
     text-align: center;
 }
-
+#our-team h2 {
+    color: #8B4513;
+    font-size: 70px;
+    text-align: center;
+}
 #mchef,
 #femchef,
 #store {
-    float: left;
-    margin-right: 10px;
+    /*float: left;*/
+    /*margin-right: 10px;*/
 }
 
 button {
@@ -99,10 +103,11 @@ button {
 
 header,
 footer {
+    margin-top: 30px;
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 0.25em;
 }
 
 section {
@@ -217,4 +222,40 @@ h3 {
 
 button:hover {
     background-color: #45a049;
+}
+#our-team h3{
+    color: #8B4513;
+    font-size: 40px;
+    text-align: center;
+}
+#first-chef, #second-chef, #third-chef{
+    align-items: center;
+    text-align: center;
+    margin: 0 15px 0 15px;
+}
+#our-team{
+    padding-top: 30px;
+  background-image: url("chef-hats.png");
+    background-size: cover; /* This will make sure the entire image covers the element */
+    background-repeat: no-repeat;
+
+}
+#our-store{
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+  background-image: url("shop.png");
+    background-size: cover; /* This will make sure the entire image covers the element */
+    background-repeat: no-repeat;
+
+}
+#chefs{
+ display: flex;
+
+}
+p b{
+    font-size: 20px;
+}
+#our-store h2{
+    color:#FFFF00;
 }
