@@ -1,39 +1,27 @@
-/* General Styles */
-body {
-    background-color: #F3E8C3;
-    font-family: Georgia, serif;
+.title {
+    font: italic titling-caps bold 12px/16px verdana;
+    font-size: 100px;
+    color: #DCCEB6;
+    -webkit-text-stroke: 0.3px black;
 }
 
-button {
-    background-color: #f6faf6;
-    color: rgb(7, 5, 5);
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+#first-bloc {
+    background-image: url("backtitle.jpg");
+    background-position: top center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #636363;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
-/* Header and Footer Styles */
-header, footer {
-    margin-top: 30px;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 0.25em;
-}
-
-/* Navigation Menu Styles */
 .menu {
     background-color: #D2D1C5;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
-    border: 1px solid #636363;
+    border: 1px solid #636363; /* Le plus grand z-index est le plus proche du premier plan */
 }
 
 .menu ul {
@@ -52,114 +40,91 @@ header, footer {
     color: black;
 }
 
+/* Styles spécifiques pour le logo */
 .menu a img {
-    border: none;
+    border: none; /* Supprime le cadre par défaut sur les images dans les liens */
 }
 
-/* Section Styles */
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    font-size: 25px;
+    margin: 0 20px; /* Ajusté la marge pour un espacement plus raisonnable */
+}
+
+a {
+    text-decoration-style: none;
+    color: #4A3D0C;
+}
+
+a:hover {
+    color: #EBC37E;
+}
+
+img[alt=logo] {
+    margin-top: 50px;
+    height: 100px;
+    border: 2px solid #E3DDDD;
+}
+
+body {
+    background-color: #F3E8C3;
+    font-family: Georgia, serif;
+}
+
+h2 {
+    color: #240c01;
+    font-size: 70px;
+    text-align: center;
+}
+#our-team h2 {
+    color: #8B4513;
+    font-size: 70px;
+    text-align: center;
+}
+#mchef,
+#femchef,
+#store {
+    /*float: left;*/
+    /*margin-right: 10px;*/
+}
+
+button {
+    background-color: #f6faf6;
+    color: rgb(7, 5, 5);
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header,
+footer {
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.25em;
+}
+
 section {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-/* Announcement Banner Styles */
-#announcementBanner {
-    background-color: #ffcc00;
-    color: #333;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: none;
-}
-
-#announcementBanner p {
-    margin: 0;
-    font-size: 16px;
-}
-
-#announcementBanner button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-/* Title Styles */
-.title {
-    font: italic titling-caps bold 12px/16px verdana;
-    font-size: 100px;
-    color: #DCCEB6;
-    -webkit-text-stroke: 0.3px black;
-}
-
-/* First Block Styles */
-#first-bloc {
-    background-image: url("backtitle.jpg");
-    background-position: top center;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #636363;
-}
-
-/* Chef Section Styles */
-#our-team {
-    padding-top: 30px;
-    background-image: url("chef-hats.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#our-team h3 {
-    color: #8B4513;
-    font-size: 40px;
-    text-align: center;
-}
-
-#chefs {
-    display: flex;
-}
-
-#first-chef, #second-chef, #third-chef {
-    align-items: center;
-    text-align: center;
-    margin: 0 15px 0 15px;
-}
-
-p b {
-    font-size: 20px;
-}
-
-/* Store Section Styles */
-#our-store {
-    align-items: center;
-    text-align: center;
-    padding-top: 150px;
-    background-image: url("shop.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#our-store h2 {
-    color: #FFFF00;
-}
-
-/* Command Section Styles */
 #section_commande {
-    background: linear-gradient(to right, #4caf50, #2196f3);
-    color: #0c0b0b;
+    background: linear-gradient(to right, #4caf50, #2196f3); /* Dégradé de couleur de fond */
+    color: #0c0b0b; /* Couleur du texte pour une meilleure visibilité sur le fond coloré */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-image: url("commande.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("commande.png"); /* Ajoutez le chemin de votre image de fond */
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir la section */
+    background-position: center; /* Centre l'image dans la section */
 }
 
 #commandeForm {
@@ -182,10 +147,28 @@ button {
     box-sizing: border-box;
 }
 
+button {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color:#080808;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style spécifique pour le champ de quantité */
 #quantite {
     width: 60px;
 }
 
+/* Style pour rendre le formulaire réactif */
 @media screen and (max-width: 600px) {
     input {
         width: calc(100% - 20px);
@@ -196,7 +179,30 @@ button {
     }
 }
 
-/* Table Container Styles */
+#announcementBanner {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none; /* Masquer initialement la bande d'annonce */
+}
+
+#announcementBanner p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#announcementBanner button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 .table-container {
     display: flex;
     flex-wrap: wrap;
@@ -206,10 +212,50 @@ button {
     border: 1px solid #ddd;
     padding: 10px;
     margin: 10px;
-    width: 22%;
+    width: 22%; /* Adjust as needed based on your design */
     box-sizing: border-box;
 }
 
 .card img {
     width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#our-team h3{
+    color: #8B4513;
+    font-size: 40px;
+    text-align: center;
+}
+#first-chef, #second-chef, #third-chef{
+    align-items: center;
+    text-align: center;
+    margin: 0 15px 0 15px;
+}
+#our-team{
+    padding-top: 30px;
+  background-image: url("chef-hats.png");
+    background-size: cover; /* This will make sure the entire image covers the element */
+    background-repeat: no-repeat;
+
+}
+#our-store{
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+  background-image: url("shop.png");
+    background-size: cover; /* This will make sure the entire image covers the element */
+    background-repeat: no-repeat;
+
+}
+#chefs{
+ display: flex;
+
+}
+p b{
+    font-size: 20px;
+}
+#our-store h2{
+    color:#FFFF00;
 }
