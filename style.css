@@ -265,11 +265,32 @@ p b{
 }
 #contact {
     display: flex; 
-}
-#formcontact{
-    position: relative;
-    right: 30px;
+       width: 50%; /* ou toute autre valeur de largeur appropriée */
+    margin-left: auto;
+    margin-right: auto;
 }
 #coord{
-    margin-left: 30px
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #f67c41;
+}
+
+
+#namemail{
+    display: flex;
+}
+#namemail #name{
+    margin-right: 5px;
+}
+#namemail #email{
+    margin-left: 5px;
+}
+#formcontact{
+   width: 400px;
+   margin-left: 10px;
+   border-top: 1px solid #000;
+}
+#formcontact #message{
+    width:395px;
+    height: 200px;
 }
