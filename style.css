@@ -255,7 +255,6 @@ button:hover {
 #our-store p{
     position: relative;
     top: -100px;
-    width: 300px;
 }
 #chefs{
  display: flex;
