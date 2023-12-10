@@ -262,4 +262,6 @@ button:hover {
 p b{
     font-size: 20px;
 }
-
+   #contact {
+      display: flex; 
+   }
