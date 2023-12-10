@@ -76,21 +76,16 @@ body {
 }
 
 h2 {
-    color: #240c01;
+    color: white;
     font-size: 70px;
     text-align: center;
 }
 #our-team h2 {
-    color: #FFFF00;
+    color: white;
     font-size: 70px;
     text-align: center;
 }
-#mchef,
-#femchef,
-#store {
-    /*float: left;*/
-    /*margin-right: 10px;*/
-}
+
 
 button {
     background-color: #f6faf6;
@@ -224,7 +219,7 @@ button:hover {
     background-color: #45a049;
 }
 #our-team h3{
-    color: #FFFF00;
+    color: white;
     font-size: 40px;
     text-align: center;
 }
@@ -235,19 +230,31 @@ button:hover {
 }
 #our-team{
     padding-top: 30px;
-  background-image: url("chef-hats.png");
+    background-image: url("wavybg.png");
     background-size: cover; /* This will make sure the entire image covers the element */
     background-repeat: no-repeat;
 
 }
+#our-store h2{
+    padding-top: 200px;
+}
 #our-store{
     align-items: center;
+    margin-top: -10px;
     text-align: center;
-    padding-top: 150px;
-  background-image: url("shop.png");
-    background-size: cover; /* This will make sure the entire image covers the element */
+    background-image: url("wavybginv.png");
+    background-size: 100% 90%; 
     background-repeat: no-repeat;
+    color:black;
 
+}
+#store{
+    position: relative;
+    top: -70px;
+}
+#our-store p{
+    position: relative;
+    top: -100px;
 }
 #chefs{
  display: flex;
@@ -256,6 +263,4 @@ button:hover {
 p b{
     font-size: 20px;
 }
-#our-store h2{
-    color:#FFFF00;
-}
+
