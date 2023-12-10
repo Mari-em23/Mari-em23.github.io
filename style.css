@@ -263,6 +263,10 @@ button:hover {
 p b{
     font-size: 20px;
 }
-   #contact {
-      display: flex; 
-   }
+#contact {
+    display: flex; 
+}
+#contactform{
+    position: relative;
+    right: 30px;
+}
