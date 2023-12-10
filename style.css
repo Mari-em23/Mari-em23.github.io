@@ -266,7 +266,10 @@ p b{
 #contact {
     display: flex; 
 }
-#contactform{
+#formcontact{
     position: relative;
     right: 30px;
+}
+#coord{
+    margin-left: 30px
 }
