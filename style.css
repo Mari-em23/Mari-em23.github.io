@@ -334,11 +334,14 @@ p b{
 
 .slideshow-container {
 
-    max-width: 700px;
+    /*max-width: 1000px;*/
     position: relative;
     margin: auto;
     margin-top: 30px;
     overflow: hidden;
+}
+.slideshow-container img{
+    width: 700px;
 }
 
 .mySlides {
@@ -393,7 +396,4 @@ p b{
 
 .active {
     background-color: #717171;
-}
-.slideshow-container img{
-    width: 700px;
 }
