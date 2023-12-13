@@ -1,32 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <link rel="stylesheet" type="text/css" href="style.css">
- <link rel="icon" type="image/x-icon" href="logo.ico">
- <title>Only chocolate</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap">
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <title>Only Chocolate</title>
 </head>
 <body>
-   
-   
-   
-<div id="announcementBanner">
-      <p>Ne manquez pas notre nouvelle collection! Profitez de 10% de réduction avec le code "NOUVEAU10"</p>
-      <button onclick="closeBanner()">X</button>
-</div>
- 
-<div class="menu">
-<a href="index.html"><img src="logo.PNG" alt="logo" title="logo"/></a>
-<ul>
-   <li><a href="index.html"  >Home</a></li>
-   <li><a href="about.html">About Us</a></li>
-   <li><a href="shop.html" >Shop</a></li>
-   <li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-<div id="first-bloc"><h1 class="title">Only Chocolate</h1></div>
- 
-<footer>
-   <p>&copy; only_chocolate</p>
-</footer>
+    <div class="menu">
+        <a href="index.html"><img src="logo.PNG" alt="logo" title="logo"/></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="first-bloc-home">
+    	<h2 class="slogan">Exclusive chocolate and sweets</h2>
+        <h1 class="title-home">Only Chocolate</h1>
+    </div>
+
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="waffles.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="brownies.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="brownies.jpg" style="width:100%">
+        </div>
+                <div class="mySlides fade">
+            <img src="brownies.jpg" style="width:100%">
+        </div>
+                <div class="mySlides fade">
+            <img src="brownies.jpg" style="width:100%">
+        </div>
+                <div class="mySlides fade">
+            <img src="brownies.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <!-- Navigation dots -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; only_chocolate</p>
+    </footer>
 </body>
 </html>
+
+   
