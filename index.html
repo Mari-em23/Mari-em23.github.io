@@ -4,6 +4,124 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap">
     <link rel="icon" type="image/x-icon" href="logo.ico">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            background-color: #D2D1C5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .menu img {
+            height: 50px; /* Adjust as needed */
+            width: auto; /* Ensures the logo stays proportional */
+        }
+
+        .menu ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #first-bloc-home {
+            background-image: url("homeback.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 500px; /* Adjust the height as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .slogan {
+            font-family: 'Pacifico', cursive;
+            font-size: 2em;
+        }
+
+        .title-home {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin-top: 10px;
+        }
+
+        .slideshow-container {
+            max-width: 1000px; /* Adjust the max-width as needed */
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%; /* Ensure the image takes the full width */
+        }
+
+        .mySlides img {
+            width: 100%;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+        }
+
+        .dot-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 8px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.25em;
+        }
+    </style>
     <title>Only Chocolate</title>
 </head>
 <body>
