@@ -1,58 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="logo.ico">
-    <title>Only Chocolate - about us</title>
+    <title>Only Chocolate - About Us</title>
 </head>
 <body>
     <div class="menu">
-        <a href="index.html"><img src="logo.PNG" alt="logo" title="logo"/></a>
+        <a href="index.html"><img src="logo.PNG" alt="Only Chocolate Logo"></a>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
-    <div id="first-bloc">
-        <h1 class="title">Only Chocolate</h1>
+    <div id="first-block">
+        <h1 class="title">Welcome to Only Chocolate</h1>
     </div>
 
-    <br><br>
-
-    <div id="our-team">
-        <h3>Our team</h3>
-        <h2>Meet our expert chefs</h2>
-        <div id="chefs">
-            <div id="first-chef">
-                <img id="femchef" src="fchef.png" height="200"><br>
-                <p><b>Sawssen Ben Salem</b> <br> <i>Assistant chef</i><br> adipiscing elit. Nullam nec leo vel metus maximus euismod.</p>
+    <section id="our-team">
+        <div class="container">
+            <h2>Meet Our Expert Chefs</h2>
+            <div class="chef">
+                <img src="fchef.png" alt="Sawssen Ben Salem" height="200">
+                <div class="chef-info">
+                    <h3>Sawssen Ben Salem</h3>
+                    <p class="position">Assistant Chef</p>
+                    <p>Passionate about crafting delicious chocolate creations that delight the senses.</p>
+                </div>
             </div>
 
-            <div id="second-chef">
-                <img id="mchef" src="mchef2.png" height="200"><br>
-                <p><b>Ala Zouari</b> <br> <i>Executive chef</i><br> adipiscing elit. Nullam nec leo vel metus maximus euismod.</p>
+            <div class="chef">
+                <img src="mchef2.png" alt="Ala Zouari" height="200">
+                <div class="chef-info">
+                    <h3>Ala Zouari</h3>
+                    <p class="position">Executive Chef</p>
+                    <p>Bringing innovation and expertise to every recipe, ensuring exceptional quality.</p>
+                </div>
             </div>
 
-            <div id="third-chef">
-                <img id="mchef" src="mchef.png" height="200"><br>
-                <p><b>Jamel Ben Chamekh</b> <br> <i>Manager of products</i><br> adipiscing elit. Nullam nec leo vel metus maximus euismod.</p>
+            <div class="chef">
+                <img src="mchef.png" alt="Jamel Ben Chamekh" height="200">
+                <div class="chef-info">
+                    <h3>Jamel Ben Chamekh</h3>
+                    <p class="position">Manager of Products</p>
+                    <p>Leading our team in sourcing the finest ingredients for our delectable treats.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="our-store">
-        <h2>Our store</h2>
-        <img id="store" src="store.png" width="500" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec leo vel metus maximus euismod. Fusce vulputate euismod risus, non tincidunt dolor viverra nec. Phasellus euismod arcu at tellus efficitur, vel cursus arcu lobortis. Sed congue, neque at consectetur dignissim, sapien quam fringilla ex, a auctor elit elit ac urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec leo vel metus maximus euismod. Fusce vulputate euismod risus, non tincidunt dolor viverra nec. Phasellus euismod arcu at tellus efficitur, vel cursus arcu lobortis. Sed congue, neque at consectetur dignissim, sapien quam fringilla ex, a auctor elit elit ac urna.
-        </p>
-    </div>
+    <section id="our-store">
+        <div class="container">
+            <h2>Discover Our Store</h2>
+            <img src="store.png" alt="Only Chocolate Store" width="500">
+            <p>Indulge your senses in our store, where every corner is filled with the aroma of chocolate. From creamy truffles to rich cocoa bars, find your perfect treat.</p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; only_chocolate</p>
+        <div class="container">
+            <p>&copy; 2024 Only Chocolate. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
