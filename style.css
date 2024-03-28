@@ -236,3 +236,100 @@ body {
             text-align: center;
             padding: 0.25em;
         }
+/* Common styles for title and slogan */
+.title,
+.slogan {
+    font-family: 'Pacifico', cursive;
+    color: #DCCEB6;
+}
+
+/* Title styles */
+.title {
+    font: italic titling-caps bold 2.5em/3.5em verdana;
+    -webkit-text-stroke: 0.3px black;
+}
+
+.title-home {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin-top: 10px;
+}
+
+/* Slogan styles */
+.slogan {
+    font-size: 2em;
+}
+
+/* First block styles */
+#first-bloc,
+#first-bloc-home {
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first-bloc-home {
+    background-image: url("homeback.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-align: center;
+}
+
+/* Menu styles */
+.menu {
+    background-color: #D2D1C5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu img {
+    height: 50px; / Adjust as needed /
+    width: auto; / Ensures the logo stays proportional /
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Section styles */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .title,
+    .slogan {
+        font-size: 1.5em;
+    }
+
+    .menu li {
+        margin: 0 10px;
+    }
+
+    .title-home {
+        font-size: 2em;
+        margin-top: 5px;
+    }
+
+    #first-bloc-home {
+        height: 400px;
+    }
+}
