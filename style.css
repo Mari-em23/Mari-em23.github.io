@@ -1,37 +1,30 @@
-/* Common styles for title and slogan */
-.title,
-.title-home,
-.slogan {
-    font-family: 'Pacifico', cursive;
-    color: #DCCEB6;
-}
-
-/* Title styles */
 .title {
-    font: italic titling-caps bold 2.5em/3.5em verdana;
+    font: italic titling-caps bold 12px/16px verdana;
+    font-size: 100px;
+    color: #DCCEB6;
     -webkit-text-stroke: 0.3px black;
 }
-
 .title-home {
-    font-size: 2.5em;
+    font-family: 'Pacifico';
+    font-size: 100px;
+    color: #DCCEB6;
     text-align: left;
     box-sizing: border-box;
-    margin-left: 20px;
-    margin-top: -30px;
+    margin-left: 20px; /* Adjust the value as needed */
+      margin-top: -30px;
 }
-
-/* Slogan styles */
 .slogan {
-    font-size: 2em;
+   font-family: 'Pacifico', cursive;
+    font-size: 80px;
+    color: #DCCEB6;
+    
     text-align: left;
-    width: 80%;
+    width: 800px;
     box-sizing: border-box;
-    margin-left: 5%;
+    margin-left: 50px; 
 }
-
-/* First block styles */
-#first-bloc,
-#first-bloc-home {
+#first-bloc {
+    background-image: url("backtitle.jpg");
     background-position: top center;
     height: 400px;
     display: flex;
@@ -39,39 +32,71 @@
     align-items: center;
     border: 1px solid #636363;
 }
-
 #first-bloc-home {
+    background-image: url("homeback.jpg");
+    background-position: top center;
+     background-size: cover;
     height: 700px;
+    border: 1px solid #636363;
 }
-
-/* Menu styles */
 .menu {
     background-color: #D2D1C5;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
-    border: 1px solid #636363;
+    border: 1px solid #636363; /* Le plus grand z-index est le plus proche du premier plan */
 }
-
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
 .menu li {
     display: inline-block;
-    font-size: 1.5em;
-    margin: 0 1.5em;
+    font-size: 25px;
+    margin: 0 100px 0 100px;
 }
-
 .menu a {
     text-decoration: none;
     color: black;
 }
-
-/* Body styles */
+/* Styles spécifiques pour le logo */
+.menu a img {
+    border: none; /* Supprime le cadre par défaut sur les images dans les liens */
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+li {
+    font-size: 25px;
+    margin: 0 20px; /* Ajusté la marge pour un espacement plus raisonnable */
+}
+a {
+    text-decoration-style: none;
+    color: #4A3D0C;
+}
+a:hover {
+    color: #EBC37E;
+}
+img[alt=logo] {
+    margin-top: 50px;
+    height: 100px;
+    border: 2px solid #E3DDDD;
+}
 body {
     background-color: #F3E8C3;
     font-family: Georgia, serif;
 }
-
-/* Button styles */
+h2 {
+    font-size: 70px;
+    text-align: center;
+}
+#our-team h2 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
 button {
     background-color: #f6faf6;
     color: rgb(7, 5, 5);
@@ -80,8 +105,6 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-
-/* Header and footer styles */
 header,
 footer {
     margin-top: 30px;
@@ -90,246 +113,200 @@ footer {
     text-align: center;
     padding: 0.25em;
 }
-
-/* Section styles */
 section {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
-/* Responsive styles */
+#section_commande {
+    background: linear-gradient(to right, #4caf50, #2196f3); /* Dégradé de couleur de fond */
+    color: #0c0b0b; /* Couleur du texte pour une meilleure visibilité sur le fond coloré */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url("commande.png"); /* Ajoutez le chemin de votre image de fond */
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir la section */
+    background-position: center; /* Centre l'image dans la section */
+}
+#commandeForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #FFBF00;
+    color:#080808;
+}
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* Style spécifique pour le champ de quantité */
+#quantite {
+    width: 60px;
+}
+/* Style pour rendre le formulaire réactif */
 @media screen and (max-width: 600px) {
-    .slogan,
-    .title-home {
-        font-size: 1.5em;
-        margin-left: 5%;
+    input {
+        width: calc(100% - 20px);
     }
-
-    .menu li {
-        font-size: 1em;
-        margin: 0 1em;
-    }
-
-    .title {
-        font-size: 2em;
-    }
-
-    .slogan {
-        width: 90%;
-        margin-left: 2%;
+    #quantite {
+        width: 100%;
     }
 }
-body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .menu {
-            background-color: #D2D1C5;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
-
-        .menu img {
-            height: 50px; /* Adjust as needed */
-            width: auto; /* Ensures the logo stays proportional */
-        }
-
-        .menu ul {
-            list-style-type: none;
-            display: flex;
-        }
-
-        .menu li {
-            margin: 0 20px;
-        }
-
-        .menu a {
-            text-decoration: none;
-            color: black;
-        }
-
-        #first-bloc-home {
-            background-image: url("homeback.jpg");
-            background-position: center;
-            background-size: cover;
-            height: 500px; /* Adjust the height as needed */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-
-        .slogan {
-            font-family: 'Pacifico', cursive;
-            font-size: 2em;
-        }
-
-        .title-home {
-            font-family: 'Pacifico', cursive;
-            font-size: 3em;
-            margin-top: 10px;
-        }
-
-        .slideshow-container {
-            max-width: 1000px; /* Adjust the max-width as needed */
-            margin: auto;
-            overflow: hidden;
-            position: relative;
-            margin-top: 30px;
-        }
-
-        .mySlides {
-            display: none;
-            width: 100%; /* Ensure the image takes the full width */
-        }
-
-        .mySlides img {
-            width: 100%;
-        }
-
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            background-color: rgba(0, 0, 0, 0.3);
-            text-decoration: none;
-        }
-
-        .dot-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .dot {
-            height: 15px;
-            width: 15px;
-            margin: 0 8px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active {
-            background-color: #717171;
-        }
-
-        footer {
-            margin-top: 30px;
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 0.25em;
-        }
-/* Common styles for title and slogan */
-.title,
-.slogan {
-    font-family: 'Pacifico', cursive;
-    color: #DCCEB6;
+#announcementBanner {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none; /* Masquer initialement la bande d'annonce */
 }
-
-/* Title styles */
-.title {
-    font: italic titling-caps bold 2.5em/3.5em verdana;
-    -webkit-text-stroke: 0.3px black;
+#announcementBanner p {
+    margin: 0;
+    font-size: 16px;
 }
-
-.title-home {
-    font-family: 'Pacifico', cursive;
-    font-size: 3em;
-    margin-top: 10px;
+#announcementBanner button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
-
-/* Slogan styles */
-.slogan {
-    font-size: 2em;
-}
-
-/* First block styles */
-#first-bloc,
-#first-bloc-home {
-    background-position: top center;
+.table-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
-
-#first-bloc-home {
-    background-image: url("homeback.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 500px;
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 22%; /* Adjust as needed based on your design */
+    box-sizing: border-box;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    transition: filter 0.3s ease; /* Add a smooth transition effect */
+}
+.card:hover img {
+    filter: blur(5px); /* Adjust the blur amount as needed */
+}
+button:hover {
+    background-color: #45a049;
+}
+#our-team h3{
     color: white;
+    font-size: 40px;
     text-align: center;
 }
-
-/* Menu styles */
-.menu {
-    background-color: #D2D1C5;
-    display: flex;
-    justify-content: space-between;
+#first-chef, #second-chef, #third-chef{
     align-items: center;
+    text-align: center;
+    margin: 0 15px 0 15px;
+}
+#our-team{
+    padding-top: 30px;
+    background-image: url("wavybg.png");
+    background-size: cover; /* This will make sure the entire image covers the element */
+    background-repeat: no-repeat;
+}
+#our-store h2{
+    color:white;
+    padding-top: 200px;
+}
+#our-store{
+    align-items: center;
+    margin-top: -10px;
+    text-align: center;
+    background-image: url("wavybginv.png");
+    background-size: 100% 90%; 
+    background-repeat: no-repeat;
+    color:black;
+}
+#store{
+    position: relative;
+    top: -70px;
+}
+#our-store p{
+    position: relative;
+    top: -100px;
+}
+#chefs{
+ display: flex;
+}
+p b{
+    font-size: 20px;
+}
+#contact {
+    display: flex; 
+       width: 50%; /* ou toute autre valeur de largeur appropriée */
+    margin-left: auto;
+    margin-right: auto;
+}
+#coord{
+    margin-right: 10px;
     padding: 10px;
+    background-color: #f67c41;
 }
-
-.menu img {
-    height: 50px; / Adjust as needed /
-    width: auto; / Ensures the logo stays proportional /
-}
-
-.menu ul {
-    list-style-type: none;
+#namemail{
     display: flex;
 }
-
-.menu li {
-    margin: 0 20px;
+#namemail #name{
+    margin-right: 5px;
+}
+#namemail #email{
+    margin-left: 5px;
+}
+#formcontact{
+   width: 400px;
+   margin-left: 10px;
+   border-top: 1px solid #000;
+}
+#formcontact #message{
+    width:395px;
+    height: 200px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: black;
+.slideshow-container {
+
+    max-width: 700px;
+    /*max-width: 1000px;*/
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.slideshow-container img{
+    width: 700px;
 }
 
-/* Section styles */
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mySlides {
+    display: none;
+@@ -394,6 +397,3 @@ p b{
+.active {
+    background-color: #717171;
 }
-
-/* Responsive styles */
-@media screen and (max-width: 600px) {
-    .title,
-    .slogan {
-        font-size: 1.5em;
-    }
-
-    .menu li {
-        margin: 0 10px;
-    }
-
-    .title-home {
-        font-size: 2em;
-        margin-top: 5px;
-    }
-
-    #first-bloc-home {
-        height: 400px;
-    }
+.slideshow-container img{
+    width: 700px;
 }
