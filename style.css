@@ -303,7 +303,47 @@ p b{
 
 .mySlides {
     display: none;
-@@ -394,6 +397,3 @@ p b{
+    transition: transform 1s ease; /* Smooth transition for sliding effect */
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+}
+/* Additional styles for navigation dots */
+.dot-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
 .active {
     background-color: #717171;
 }
